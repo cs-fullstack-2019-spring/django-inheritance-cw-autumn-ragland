@@ -1,0 +1,44 @@
+body{
+    margin: 5%;
+    background: white;
+    height: 80vh;
+}
+
+article{
+    float: left;
+    background: gray;
+    padding: 1%;
+    margin-right: 5%;
+    font-size: 12px;
+    height: 90%;
+}
+
+img{
+    padding: 5%;
+    width: 15%;
+    height: auto;
+}
+
+.smallImg{
+    width: auto;
+    height: 15px;
+    padding: 0;
+}
+
+.clickLogo{
+    width: 10%;
+    height: auto;
+    padding: 0;
+}
+
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    padding: 1%;
+    margin: 5%;
+    height: auto;
+    width: 10%;
+}

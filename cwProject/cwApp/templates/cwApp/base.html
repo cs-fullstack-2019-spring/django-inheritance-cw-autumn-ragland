@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BASE</title>
+    {% load static %}
+    <link rel="stylesheet" href="../../static/css/base.css">
+</head>
+<body>
+<h1>CodeCrew</h1>
+<nav>
+    <a href="{% url 'index' %}"><img class="clickLogo" src="../../static/images/logo.png" height="91" width="551"/></a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'gallery' %}">Gallery</a>
+    <a href="{% url 'resources' %}">Resources</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+</nav>
+
+
+{% block sidebar %}
+    <article>
+        <img class="smallImg" src="../../static/images/logo.png" height="91" width="551"/>
+        <p>88 Union Avenue, 2nd Floor,</p> <p>Memphis, TN 38103 </p><p>901-229-1720</p> team@code-crew.org<p> #GritGrindCode </p>
+        <p>ICON ICON ICON ICON</p>
+    </article>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'cwApp/base.html' %}
+
+{% block content %}
+
+{% if contact_list %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+        {% for contact in contact_list %}
+        <tr>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.message }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <h2>No Contact Items</h2>
+{% endif %}
+
+{% endblock %}
+
+{% block sidebar %}
+
+{% endblock %}
